@@ -235,6 +235,7 @@ namespace MissionPlanner
             this.ServerMenu.Image = global::MissionPlanner.Properties.Resources.dark_help_icon2;
             resources.ApplyResources(this.ServerMenu, "ServerMenu");
             this.ServerMenu.Name = "ServerMenu";
+            this.ServerMenu.Click += new System.EventHandler(this.ServerMenu_Click);
             // 
             // FPVMenu
             // 
@@ -243,6 +244,7 @@ namespace MissionPlanner
             resources.ApplyResources(this.FPVMenu, "FPVMenu");
             this.FPVMenu.Name = "FPVMenu";
             this.FPVMenu.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+            this.FPVMenu.Click += new System.EventHandler(this.FPVMenu_Click);
             // 
             // gIMBALToolStripMenuItem
             // 

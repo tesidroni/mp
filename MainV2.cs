@@ -2091,8 +2091,8 @@ namespace MissionPlanner
             MyView.AddScreen(new MainSwitcher.Screen("Simulation", Simulation, true));
             MyView.AddScreen(new MainSwitcher.Screen("Terminal", new GCSViews.Terminal(), false));
             MyView.AddScreen(new MainSwitcher.Screen("Help", new GCSViews.Help(), false));
-          /*  MyView.AddScreen(new MainSwitcher.Screen("Client", CLIENT, false));
-            MyView.AddScreen(new MainSwitcher.Screen("Server", SERVER, false));*/
+            MyView.AddScreen(new MainSwitcher.Screen("Client", new GCSViews.Client(), false));
+            MyView.AddScreen(new MainSwitcher.Screen("Server", new GCSViews.ServerBabbo(), false));
 
             try
             {
@@ -2900,7 +2900,16 @@ namespace MissionPlanner
 
         private void ClientMenu_Click(object sender, EventArgs e)
         {
+            MyView.ShowScreen("Client");
+        }
 
+        private void ServerMenu_Click(object sender, EventArgs e)
+        {
+            MyView.ShowScreen("Server");
+        }
+
+        private void FPVMenu_Click(object sender, EventArgs e)
+        {
         }
 
 
